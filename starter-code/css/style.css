@@ -53,3 +53,13 @@ h1, h2 {
   text-align: center;
   margin: 50px 0;
 }
+
+.addNewProd {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 225px;
+}
+
+.addNewProd input {
+  
+}

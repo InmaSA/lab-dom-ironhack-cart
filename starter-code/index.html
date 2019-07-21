@@ -26,16 +26,16 @@
   </div>
 
   <div>
-    <span class="productCost product1">100</span>
+    <p>$<span class="productCost">100</span></p>
   </div>
 
   <div>
     <label>Qty</label>
-    <input class="userInput product1" type="text">
+    <input class="userInput" type="text">
   </div>
 
   <div>
-    <span class="multiProductCost product1">0</span>
+    <p>$<span class="totalProductCost">0</span></p>
   </div>
 
   <div>
@@ -51,27 +51,43 @@
     
     <div class="productContainer">
       <div>
-        <span class="productName product2">Ironhack Smart Coffee</span>
+        <span class="productName">Ironhack Smart Coffee</span>
       </div>
       
       <div>
-        <span class="productCost product2">20</span>
+        <p>$<span class="productCost">20</span></p>
       </div>
       
       <div>
         <label>Qty</label>
-        <input class="userInput product2" type="text">
+        <input class="userInput" type="text">
       </div>
       
       <div>
-        <span class="multiProductCost product2">0</span>
+        <p>$<span class="totalProductCost">0</span></p>
       </div>
       
       <div>
       <button class="button buttonDelete">Delete</button>
-    </div>
+      </div>
     
   </div>
+
+
+<!-------------------CREATE NEW PRODUCTS IN THE LIST------------------------->
+
+<div class="addNewProd">
+
+  <div>
+    <input type="text" class="newItem">
+    <input type="text" class="newItemUnitPrice">
+  </div>
+  
+  <div>
+    <button id="createButton">Create</button>
+  </div>
+
+</div>
 
 <!--------------------CALCULATE PRICE BUTTON----------------------->
 
@@ -79,11 +95,17 @@
   <button id="calculateButton" class="button buttonSuccess">Calculate Prices</button>
 </div>
 
-<!--------------------TOTAL PRICE OUTOUT-------------------------->
+
+
+<!--------------------TOTAL PRICE OUTPUT-------------------------->
 
 <div>
-  <h2>Total Price: <span class="totalPrice">$0</span></h2>
+  <h2>Total Price: $<span id="totalPrice">0</span></h2>
 </div>
+
+
+
+
 
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
